@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Redbus.in</title>
+        <link rel="icon" href="https://i.postimg.cc/MpPMV096/redbus.png">
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: #fff;
+        }
+        .wrapper{
+            width: 100%;
+        }
+
+        li{border:1px soild #e04c54;width: 288px;
+            text-align:center;background-color:#e04c54;
+            color:white;height:66px;padding-top:15px;
+            box-sizing:border-box;float:left;}
+        
+        li:hover{border:1px soild #e04c54ed;width: 288px;
+            text-align:center;background-color:rgba(219, 0, 0, 0.918);
+            color:rgb(252, 130, 161);height:66px;padding-top:25px;
+            box-sizing:border-box;}
+        
+        ul ul {margin-top:12px;margin-left:-40px;
+                display:none;}
+        ul li:hover ul{display:block;}
+    
+        body {
+                font-family: 'poppin', sans-serif;
+              }
+    
+        /* Style the header */
+        header {
+                background-color: #fff;
+                padding: 40px;
+                text-align: center;
+                font-size: 38px;
+                color: white;
+                }
+        .logo {
+            background-color: #e04c54;
+	        float: left;
+                }
+        .logo img {
+            padding: 5px ;
+                    }
+        .image {
+            position: relative;
+            width: 710px;
+        }
+        .image__img{
+            display: grid;
+            width: 65%;
+            height: 285px;
+        }
+        .image__overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(247, 54, 54, 0.849);
+            color: white;
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition:opacity 0.25s;
+        }
+        .image__overlay--blur {
+            backdrop-filter: blur(5px);
+        }
+        .image__overlay:hover{
+            opacity: 1;
+        }
+        .image__title{
+            font-size: 2cm;
+            font-weight: bold;
+        }
+        
+           
+    </style>
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="https://i.postimg.cc/zXFNsGkg/redbus-white.png" alt="redBus" width="85px">
+            </div>
+            <ul type="none">
+                <!-- <a href="book.html"><li>Book Tickets</li></a> -->
+                <a href="book.html"><li>About Us</li></a>
+                <a href="terms and conditons.html"><li>Terms & Conditions</li></a>
+                <a href="bus hire.html"><li>Bus Hire</li></a>
+                <li>Type of Services
+                    <ul type="none">
+                        <a href="deluxe_index.html"><li>Deluxe Bus</li></a>
+                        <a href="seater_index.html"><li>Sleeper Seater Bus</li></a>         
+                    </ul>
+                </li>
+                <a href="index.html"><li>Logout</li></a>
+            </ul>
+        </div>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <center>
+            <div class="image">
+                <img class="image__img" src="img/busimag.png" alt="BUS">
+                <div class="image__overlay image__overlay--blur">
+                    <div class="image__tile"><center><h2>WELCOME<br><br>TO<br><br><strong>RedBus India</strong><br><br><br>WORLD's LARGEST ONLINE BUS BOOKING PLATFORM</h2></center></div>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <marquee> 
+                <img src="img/offer1.png" alt="BUS">
+                <img src="img/offer2.png" alt="BUS">
+            </marquee>
+        
+        </center>   
+        
+    </body>    
+</html>
